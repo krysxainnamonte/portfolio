@@ -17,7 +17,7 @@ body {
 
     scrollbar-width: none;
 
-    background-image: url(/IMG/body-bg.jpg);
+    background-image: url(../IMG/body-bg.jpg);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: 100% auto;
