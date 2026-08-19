@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+
+    background-color: black;
+
+    scrollbar-width: none;
+
+    background-image: url(/IMG/bg.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+/*----------------------------------------------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px; 
+}
+
+/*----------------------------------------------------*/
+
+nav {
+    position: fixed;
+    top: 15px;
+    left: 65%;
+    width: 480px;
+    z-index: 9999;
+
+    background-color: rgba(0, 0, 0, 0.348);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(110, 20, 219);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+nav > ul {
+    display: flex;
+    gap: 40px;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    font-family: "Quicksand", sans-serif;
+}
+
+.nav:hover {
+    color: rgb(110, 20, 219);
+    transition: 0.3s; 
+}
+
+/*----------------------------------------------------*/
+
+main {
+    padding: 10px 70px;
+
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+main > section {
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.home-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    font-family: "Cause", cursive;
+    font-size: 20px;
+    
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 60px;
+        font-family: "Syncopate", sans-serif;
+        margin: 0;
+        text-align: left;
+    }
+
+    h3 {
+        color: rgba(255, 255, 255, 0.621) ;
+        text-align: left;
+    }
+
+    
+} 
+.home-image {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 10px;
+}
+
+.button {
+    background-color:rgb(110, 20, 219);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.contact-button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(110, 20, 219);
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.contact-icon > i{
+    font-size: 40px;
+}
+/*-------- ABOUT ME ---------------------------------------*/
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+
+    padding: 50px;
+}
+
+ p, li, h3, h2 {
+    font-family: "Quicksand", sans-serif;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    justify-content: center;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+}
+
+.skills > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+
+    li {
+        padding: 10px 20px;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.255);
+
+    }
+}
+
+.skills ul > li:hover {
+    border-color: rgba(110, 20, 219, 0.796);
+    background-color: rgba(110, 20, 219, 0.796);
+    box-shadow: rgb(117, 15, 241) 0 0.8px 15px 0.8px;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.abt-me-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    li {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        border-color: gray;
+        background-color: rgba(0, 0, 0, 0.255);
+
+        padding: 10px;
+    }
+}
+
+.get-in-touch > li:hover {
+    border-color: rgba(110, 20, 219, 0.796);
+    background-color: rgba(110, 20, 219, 0.796);
+    box-shadow: rgb(117, 15, 241) 0 0.8px 15px 0.8px;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+
+
+
+.works {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 50px;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        justify-content: center;
+    }
+}
+
+.works {
+    text-align: center;
+}
+
+.works > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.project  > div {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        max-width: 40%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.175);
+        border-style: solid;
+        border-width: 1px;
+        border-color: gray;
+        border-radius: 10px;
+
+
+        align-self: center;
+    }
+}
+
+.project div > a:hover {
+    background-color: rgba(255, 255, 255, 0.597);
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.548) ;
+    transform: translateY(-5px);
+    transition: 0.2s ease-out;
+}
+
+.project {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+
+    border-color: gray;
+    background-color: rgba(0, 0, 0, 0.356);
+
+    padding: 20px;
+}
+
+
+
+/*----------------------------------------------------*/
+/* MGA IMAGE*/
+.header-logo {
+    width: 150px;
+    height: auto;
+}
+
+.profile {
+    width: 600px;
+    height: auto;
+    justify-self: center;
+}
+
+.card-profile {
+    width: 390px;
+    height: auto;
+
+    border-radius: 1000px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(110, 20, 219)
+}
+
+.project-pic {
+    width: 400px;
+    height: auto;
+
+    border-radius: 20px;
+}
+
+
+
